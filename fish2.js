@@ -2,7 +2,6 @@
 xpath = '/html/body/div[1]/div[3]/div[1]/div[1]/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div[3]/main/div[1]/div/div/ol';
 xpath2 = '/html/body/div[2]/div[3]/div[1]/div[1]/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div[3]/main/div[1]/div/div/ol';
 function loop() {
-    verify = ""
     image = document.evaluate(xpath + '/li[last()]//div/div[3]/div/div/div/div/button[1]/div/div/img', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue
     image2 = document.evaluate(xpath + '/li[last()-1]//div/div[3]/div/div/div/div/button[1]/div/div/img', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue
     if (image) {
